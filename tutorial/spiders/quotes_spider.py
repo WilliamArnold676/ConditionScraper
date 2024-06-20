@@ -25,7 +25,7 @@ import csv
 #scrapy shell 'https://quotes.toscrape.com/page/1/'
 
 def authentication_failed(response):
-    # TODO: Check the contents of the response and return True if it failed
+
     # or False if it succeeded.
     pass
 
