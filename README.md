@@ -7,14 +7,20 @@ without adjustments. If you wish to learn more about scrapy I highly recommend r
 https://docs.scrapy.org/en/latest/intro/tutorial.html
 
 How to Use:
-Open the program in an IDE of your choosing, and pull up the terminal. In the terminal type in scrapy crawl conditions, and in the folder
-directory a conditions.csv file will be generated with the result. If you wish to put the result in a different file type that can also be
-done by instead typing  scrapy crawl conditions --loglevel=INFO -o conditions.json if you wish to put it into a json. This will generate a
-conditions.json file in addition to the previous .csv fille. Scrapy only supports a set number of output formats 
+
+  1. Open the program in an IDE of your choosing
+  2. Pull up the terminal
+  3. In the terminal type in scrapy crawl conditions
+In the folder directory a conditions.csv file will be generated with the result.
+
+If you wish to put the result in a different file type that can also be done by instead typing 
+scrapy crawl conditions --loglevel=INFO -o conditions.json if you wish to put it into a json. This will generate a conditions.json file in 
+addition to the previous .csv fille. Scrapy only supports a set number of output formats 
 (json, jsonlines, jsonl, jl, csv, xml, 'marshal', 'pickle') and to use those you must replace the .json in the command line with your 
 respective type.
 
-Unfinished tasks
+Unfinished tasks:
+
 During my time working on this, I tried a number of smaller tasks, including implementing openai's assistent chat bot and making the 
 program into a .exe executable. I did not have enough time to finish both, but you can find the remenants of both. The ai items can be
 ai.py file and .exe items can be found at the bottom of the quotes_spider.py file. I'd also recommend you consult these links for
