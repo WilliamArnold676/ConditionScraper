@@ -10,7 +10,8 @@ client = OpenAI()
 vector_store = client.beta.vector_stores.create(name="Health conditions")
 
 # # Ready the files for upload to OpenAI
-file_paths = ["dataFiles/links.json"]
+# Must be inside the tutorial folder
+file_paths = ["cont.json"]
 file_streams = [open(path, "rb") for path in file_paths]
 
 
@@ -32,8 +33,9 @@ assistant = client.beta.assistants.create(
 )
 
 # Upload the user provided file to OpenAI
+# Must be inside the tutorial folder
 message_file = client.files.create(
-    file=open("dataFiles/links.json", "rb"), purpose="assistants"
+    file=open("cont.json", "rb"), purpose="assistants"
 )
 
 # Create a thread and attach the file to the message
